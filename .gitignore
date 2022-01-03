@@ -4,5 +4,5 @@
 
 !.gitignore
 !moodle/*
-!mysql/*
+!mysql/data/moodle
 !*/htdocs/moodle/*
