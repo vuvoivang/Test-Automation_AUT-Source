@@ -39,8 +39,8 @@ At course: Turn Editing On -> Add an activity or resource -> Assignment
 - Display period: enable display start hoặc display end để chọn
 - Tags:
 
-* Tạo 1 tags mới: nhập và enter
-* Tạo multiple tags
+--- Tạo 1 tags mới: nhập và enter
+--- Tạo multiple tags
 
 ## Thêm assignment cho course
 
@@ -97,14 +97,14 @@ Khi tạo thành công (bước khởi đầu) sẽ dẫn đến giao diện dis
 
 - Test case chung của các option:
 
-* Nhập đủ các trường required: Question name, Question text, Default mark
-* Không nhập đủ các trường required-> báo error: You must supply a value here.
+--- Nhập đủ các trường required: Question name, Question text, Default mark
+--- Không nhập đủ các trường required-> báo error: You must supply a value here.
 
 - Option Multiple Choice:
   Trong mục Answer:
 
-* Không 1 answer nào có Grade = 100% -> báo error: One of the choices should be 100%, so that it is possible to get a full grade for this question.
-* Nhập Grade nhưng k nhập tên Choice -> báo error: Grade set, but the Answer is blank
+--- Không 1 answer nào có Grade = 100% -> báo error: One of the choices should be 100%, so that it is possible to get a full grade for this question.
+--- Nhập Grade nhưng k nhập tên Choice -> báo error: Grade set, but the Answer is blank
 
 - Option True/False, Description, ...
 
