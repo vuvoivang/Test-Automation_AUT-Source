@@ -10,3 +10,24 @@ URL AUT: http://localhost:8080/moodle
 - moodle
 - mysql
 - htdocs/moodle
+# Test Cases:
+
+# For student
+# Enroll:
+- Enroll thành công (cho phép self-enr)
+- Enroll thất bại (không cho phép)
+- Enroll voi Key thanh cong
+- Enroll voi Key that bai
+# Nộp bài:
+- Đúng hạn
+- Trễ hạn (vẫn nộp dc)
+- Trễ hạn (ko nộp được)
+- Nộp bài quá 20MB
+- Tích xác nhận
+# Xem thông báo, event trên calendar:
+- Click vào ngày rồi đi đến nộp bài
+-  Xem thông báo bình thường
+# Nhắn tin:
+- Nhắn mess thường
+- Nhắn lúc offline
+- Nhắn có thêm icon
