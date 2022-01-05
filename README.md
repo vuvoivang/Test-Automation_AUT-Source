@@ -24,7 +24,7 @@ URL AUT: http://localhost:8080/moodle
 
 ### Step to go
 
-At course: Turn Editing On -> Add an activity or resource -> Assignment
+At course: Click Announcements -> Add a new topic
 
 ### Basic
 
@@ -46,7 +46,7 @@ At course: Turn Editing On -> Add an activity or resource -> Assignment
 
 ### Step to go
 
-At course: Click Announcements -> Add a new topic
+At course: Turn Editing On -> Add an activity or resource -> Assignment
 
 ### Basic
 
