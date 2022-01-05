@@ -9,6 +9,11 @@ URL AUT: http://localhost:8080/moodle
 ## Admin
 - Username: admin
 - Password: PasswordTest123%
+
+## Teacher
+- Username: onix
+- Password: OnixPassword123%
+
 ## Student
 - Username: hoangvu
 - Password: PasswordTest123%
