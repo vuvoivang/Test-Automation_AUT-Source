@@ -3,6 +3,10 @@
 *
 
 !.gitignore
-!moodle/*
+!README.md
 !mysql/*
 !*/htdocs/moodle/*
+
+!moodledata/*
+moodledata/cache/*
+moodledata/localcache/*
