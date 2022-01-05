@@ -6,8 +6,20 @@ URL AUT: http://localhost:8080/moodle
 - Port MySQL: 3306
 
 # Account Test
-
+## Admin
 - Username: admin
+- Password: PasswordTest123%
+## Student
+- Username: hoangvu
+- Password: PasswordTest123%
+
+- Username: xuany
+- Password: PasswordTest123%
+
+- Username: thaiduy
+- Password: PasswordTest123%
+
+- Username: chihao
 - Password: PasswordTest123%
 
 # Add 3 important folder
