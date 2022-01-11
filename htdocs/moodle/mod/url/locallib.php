@@ -298,7 +298,7 @@ function url_print_workaround($url, $cm, $course) {
     }
 
     echo '<div class="urlworkaround">';
-    print_string('clicktoopen', 'url', "<a href=\"$fullurl\" $extra>$fullurl</a>");
+    print_string('clicktoopen', 'url', "<span href=\"$fullurl\" $extra>$fullurl</span>");
     echo '</div>';
 
     echo $OUTPUT->footer();
