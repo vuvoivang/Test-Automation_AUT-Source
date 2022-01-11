@@ -2662,7 +2662,11 @@ require(["core/event", "jquery"], function(Event, $) {
                 if ($rule['message']===null){
                     $a=new stdClass();
                     $a->format=$rule['format'];
-                    $str=get_string('err_'.$rule['type'], 'form', $a);
+                    if($rule['type'] == 'required') {
+                        $str = 'U must supply a value hia';
+                    } else {
+                        $str=get_string('err_'.$rule['type'], 'form', $a);
+                    }
                     if (strpos($str, '[[')!==0){
                         $this->_rules[$field][$key]['message']=$str;
                     }
