@@ -290,6 +290,10 @@ function useredit_shared_definition(&$mform, $editoroptions, $filemanageroptions
         $mform->addElement('text', 'email', get_string('email'), 'maxlength="100" size="30"' . $purpose);
         $mform->addRule('email', $strrequired, 'required', null, 'client');
         $mform->setType('email', PARAM_RAW_TRIMMED);
+
+        $mform->addElement('text', 'nickname', 'Nickname', 'maxlength="100" size="30"' . $purpose);
+        $mform->addRule('nickname', $strrequired, 'required', null, 'client');
+        $mform->setType('nickname', PARAM_RAW_TRIMMED);
     }
 
     $choices = array();
