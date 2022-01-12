@@ -180,7 +180,7 @@ $string['firsttry'] = 'First try';
 $string['flagged'] = 'Flagged';
 $string['flagthisquestion'] = 'Flag this question';
 $string['formquestionnotinids'] = 'Form contained question that is not in questionids';
-$string['fractionsnomax'] = 'One of the answers should have a score of 100% so it is possible to get full marks for this question.';
+$string['fractionsnomax'] = 'One of the answers should have a score of 100% so it is possible to get full marks for this question fail.';
 $string['getcategoryfromfile'] = 'Get category from file';
 $string['getcontextfromfile'] = 'Get context from file';
 $string['changepublishstatuscat'] = '<a href="{$a->caturl}">Category "{$a->name}"</a> in course "{$a->coursename}" will have its sharing status changed from {$a->changefrom} to {$a->changeto}.';
