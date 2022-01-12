@@ -264,7 +264,7 @@ $string['seemoredetail'] = 'Click here to see more detail';
 $string['selectedquestions'] = 'Selected questions from a scale, all students';
 $string['summary'] = 'Summary';
 $string['survey:addinstance'] = 'Add a new survey';
-$string['surveycompleted'] = 'You\'ve completed this survey.  The graph below shows a summary of your results compared to the class averages.';
+$string['surveycompleted'] = 'Congratuliations!! You\'ve completed this survey.  The graph below shows a summary of your results compared to the class averages.';
 $string['surveycompletednograph'] = 'You have completed this survey.';
 $string['survey:download'] = 'Download responses';
 $string['surveygraph'] = 'Survey graph';
@@ -279,7 +279,7 @@ $string['surveytype_help'] = 'There are 3 available survey types:
 * Critical incidents survey
 * Constructivist On-line Learning Environment Survey (COLLES) - For monitoring the extent to which the interactive capacity of the World Wide Web may be exploited for engaging students in dynamic learning practices';
 $string['surveytype_link'] = 'mod/survey/mod';
-$string['thanksforanswers'] = 'Thanks for answering this survey, {$a}';
+$string['thanksforanswers'] = 'Thank you very much for answering this survey, {$a}';
 $string['time'] = 'Time';
 $string['viewsurveyresponses'] = 'View {$a} survey responses';
 $string['notyetanswered'] = 'Not yet answered';
