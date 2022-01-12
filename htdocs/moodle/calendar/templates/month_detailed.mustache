@@ -111,13 +111,13 @@
                                                     {{/maxdayerror}}
                                                 {{/draggable}}>
 
-                                                <a data-action="view-event" data-event-id="{{id}}" href="{{url}}" title="{{name}}">
+                                                <div data-action="view-event" data-event-id="{{id}}" href="#" title="{{name}}">
                                                     <span class="calendar-circle calendar_event_{{normalisedeventtype}}">
                                                         &nbsp;
                                                     </span>
                                                     {{> core_calendar/event_icon}}
                                                     <span class="eventname">{{{name}}}</span>
-                                                </a>
+                                                </div>
                                             </li>
                                         {{/underway}}
                                         {{/events}}
