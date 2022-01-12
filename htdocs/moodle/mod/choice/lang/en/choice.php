@@ -158,7 +158,7 @@ $string['viewallresponses'] = 'View {$a} responses';
 $string['viewchoices'] = 'View choices';
 $string['withselected'] = 'With selected';
 $string['userchoosethisoption'] = 'Users who chose this option';
-$string['yourselection'] = 'Your choice';
+$string['yourselection'] = 'Your selection';
 
 // Deprecated since Moodle 3.8.
 $string['choiceactivityname'] = 'Choice: {$a}';

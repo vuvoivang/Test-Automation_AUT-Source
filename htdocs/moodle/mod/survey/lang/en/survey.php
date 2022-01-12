@@ -279,7 +279,7 @@ $string['surveytype_help'] = 'There are 3 available survey types:
 * Critical incidents survey
 * Constructivist On-line Learning Environment Survey (COLLES) - For monitoring the extent to which the interactive capacity of the World Wide Web may be exploited for engaging students in dynamic learning practices';
 $string['surveytype_link'] = 'mod/survey/mod';
-$string['thanksforanswers'] = 'Thank you very much for answering this survey, {$a}';
+$string['thanksforanswers'] = 'Thanks for answering this survey, {$a}';
 $string['time'] = 'Time';
 $string['viewsurveyresponses'] = 'View {$a} survey responses';
 $string['notyetanswered'] = 'Not yet answered';
