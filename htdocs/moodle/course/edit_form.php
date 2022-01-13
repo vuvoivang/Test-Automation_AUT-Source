@@ -465,11 +465,11 @@ class course_edit_form extends moodleform {
         $errors = parent::validation($data, $files);
 
         // Add field validation check for duplicate shortname.
-        if ($course = $DB->get_record('course', array('shortname' => $data['shortname']), '*', IGNORE_MULTIPLE)) {
-            if (empty($data['id']) || $course->id != $data['id']) {
-                $errors['shortname'] = get_string('shortnametaken', '', $course->fullname);
-            }
-        }
+        // if ($course = $DB->get_record('course', array('shortname' => $data['shortname']), '*', IGNORE_MULTIPLE)) {
+        //     if (empty($data['id']) || $course->id != $data['id']) {
+        //         $errors['shortname'] = get_string('shortnametaken', '', $course->fullname);
+        //     }
+        // }
 
         // Add field validation check for duplicate idnumber.
         if (!empty($data['idnumber']) && (empty($data['id']) || $this->course->idnumber != $data['idnumber'])) {
