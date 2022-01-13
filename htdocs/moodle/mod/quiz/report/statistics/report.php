@@ -341,7 +341,7 @@ class quiz_statistics_report extends quiz_default_report {
         echo $OUTPUT->heading(get_string('questioninformation', 'quiz_statistics'), 3);
         echo html_writer::table($questioninfotable);
         echo $this->render_question_text($questionstat->question);
-        echo $OUTPUT->heading(get_string('questionstatistics', 'quiz_statistics'), 3);
+        echo $OUTPUT->heading('Statistic of the question'/*get_string('questionstatistics', 'quiz_statistics')*/, 3);
         echo html_writer::table($questionstatstable);
     }
 

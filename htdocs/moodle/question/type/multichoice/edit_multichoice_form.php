@@ -147,8 +147,7 @@ class qtype_multichoice_edit_form extends question_edit_form {
             $errors['answer[0]'] = get_string('notenoughanswers', 'qtype_multichoice', 2);
             $errors['answer[1]'] = get_string('notenoughanswers', 'qtype_multichoice', 2);
         } else if ($answercount == 1) {
-            $errors['answer[1]'] = get_string('notenoughanswers', 'qtype_multichoice', 2);
-
+            $errors['answer[1]'] = 'Require at least 2 choices'/*get_string('notenoughanswers', 'qtype_multichoice', 2)*/;
         }
 
         // Perform sanity checks on fractional grades.

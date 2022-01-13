@@ -70,7 +70,7 @@
 
 // Print the page and finish up.
 
-    notice(get_string("thanksforanswers","survey", $USER->firstname), "$CFG->wwwroot/course/view.php?id=$course->id");
+    notice(get_string("notyetanswered","survey", $USER->firstname), "$CFG->wwwroot/course/view.php?id=$course->id");
 
     exit;
 

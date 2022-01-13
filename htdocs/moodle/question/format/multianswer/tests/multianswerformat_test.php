@@ -89,7 +89,7 @@ The capital of France is {#5}.
         // Check that there were some expected errors.
         $this->assertStringContainsString('Error importing question', $output);
         $this->assertStringContainsString('Invalid embedded answers (Cloze) question', $output);
-        $this->assertStringContainsString('This type of question requires at least 2 choices', $output);
+        $this->assertStringContainsString('This type of question requires at least 2 choices fail', $output);
 
         // No question  have been imported.
         $this->assertCount(0, $questions);
