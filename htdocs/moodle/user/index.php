@@ -160,9 +160,9 @@ $manager = new course_enrolment_manager($PAGE, $course);
 $enrolbuttons = $manager->get_manual_enrol_buttons();
 $enrolrenderer = $PAGE->get_renderer('core_enrol');
 $enrolbuttonsout = '';
-foreach ($enrolbuttons as $enrolbutton) {
-    $enrolbuttonsout .= $enrolrenderer->render($enrolbutton);
-}
+// foreach ($enrolbuttons as $enrolbutton) {
+//     $enrolbuttonsout .= $enrolrenderer->render($enrolbutton);
+// }
 
 echo html_writer::div($enrolbuttonsout, 'd-flex justify-content-end', [
     'data-region' => 'wrapper',
@@ -300,9 +300,9 @@ $enrolrenderer = $PAGE->get_renderer('core_enrol');
 // Need to re-generate the buttons to avoid having elements with duplicate ids on the page.
 $enrolbuttons = $manager->get_manual_enrol_buttons();
 $enrolbuttonsout = '';
-foreach ($enrolbuttons as $enrolbutton) {
-    $enrolbuttonsout .= $enrolrenderer->render($enrolbutton);
-}
+// foreach ($enrolbuttons as $enrolbutton) {
+//     $enrolbuttonsout .= $enrolrenderer->render($enrolbutton);
+// }
 echo html_writer::div($enrolbuttonsout, 'd-flex justify-content-end', [
     'data-region' => 'wrapper',
     'data-table-uniqueid' => $participanttable->uniqueid,

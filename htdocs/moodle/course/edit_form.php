@@ -73,6 +73,9 @@ class course_edit_form extends moodleform {
             $mform->setConstant('shortname', $course->shortname);
         }
 
+        $mform->addElement('text', 'description', 'Description', 'maxlength="100" size="20"');
+        $mform->addRule('description', 'Missing description', 'required', null, 'client');
+
         // Verify permissions to change course category or keep current.
         if (empty($course->id)) {
             if (has_capability('moodle/course:create', $categorycontext)) {
@@ -467,7 +470,7 @@ class course_edit_form extends moodleform {
         // Add field validation check for duplicate shortname.
         if ($course = $DB->get_record('course', array('shortname' => $data['shortname']), '*', IGNORE_MULTIPLE)) {
             if (empty($data['id']) || $course->id != $data['id']) {
-                $errors['shortname'] = get_string('shortnametaken', '', $course->fullname);
+                // $errors['shortname'] = get_string('shortnametaken', '', $course->fullname);
             }
         }
 
