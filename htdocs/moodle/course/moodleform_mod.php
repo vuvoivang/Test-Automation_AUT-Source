@@ -1142,9 +1142,9 @@ abstract class moodleform_mod extends moodleform {
 
         // Label for the submit button to return to the course.
         // Ignore this button in single activity format because it is confusing.
-        if ($submit2label !== false && $this->courseformat->has_view_page()) {
-            $buttonarray[] = &$mform->createElement('submit', 'submitbutton2', $submit2label);
-        }
+        // if ($submit2label !== false && $this->courseformat->has_view_page()) {
+        //     $buttonarray[] = &$mform->createElement('submit', 'submitbutton2', $submit2label);
+        // }
 
         if ($submitlabel !== false) {
             $buttonarray[] = &$mform->createElement('submit', 'submitbutton', $submitlabel);
