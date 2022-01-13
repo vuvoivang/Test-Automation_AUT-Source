@@ -102,6 +102,9 @@ class user_editadvanced_form extends moodleform {
         $mform->addHelpButton('username', 'username', 'auth');
         $mform->setType('username', PARAM_RAW);
 
+        $mform->addElement('text', 'phonenumber', 'Phone number', 'maxlength="100" size="20"' . $purpose);
+        $mform->addRule('phonenumber', $strrequired, 'required', null, 'client');
+
         if ($userid !== -1) {
             $mform->disabledIf('username', 'auth', 'in', $cannotchangeusername);
         }
