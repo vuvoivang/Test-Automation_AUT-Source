@@ -152,7 +152,7 @@ if ($data = $exportform->get_data()) {
     $link = new moodle_url('/calendar/export_execute.php', $params);
     if (!empty($data->generateurl)) {
         $urlclasses = array('class' => 'generalbox calendarurl');
-        $calendarurl = html_writer::tag( 'div', get_string('calendarurl', 'calendar', $link->out()), $urlclasses);
+        //$calendarurl = html_writer::tag( 'div', get_string('calendarurl', 'calendar', $link->out()), $urlclasses);
     }
 
     if (!empty($data->export)) {
