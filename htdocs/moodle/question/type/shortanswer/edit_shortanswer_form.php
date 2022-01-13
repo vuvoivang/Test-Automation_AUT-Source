@@ -89,7 +89,7 @@ class qtype_shortanswer_edit_form extends question_edit_form {
             $errors['answeroptions[0]'] = get_string('notenoughanswers', 'qtype_shortanswer', 1);
         }
         if ($maxgrade == false) {
-            $errors['answeroptions[0]'] = get_string('fractionsnomax', 'question');
+            $errors['answeroptions[0]'] = 'One of the answers should have a score of 100%'/*get_string('fractionsnomax', 'question')*/;
         }
         return $errors;
     }

@@ -59,8 +59,16 @@ abstract class mod_quiz_attempts_report_form extends moodleform
                 $this->standard_preference_fields($mform);
                 $this->other_preference_fields($mform);
 
-                // $mform->addElement('submit', 'submitbutton',
-                //         get_string('showreport', 'quiz'));
+                $mform->addElement(
+                        'header',
+                        'preferencesuser',
+                        get_string('showreport', 'quiz')
+                );
+                $mform->addElement(
+                        'submit',
+                        'submitbutton',
+                        get_string('showreport', 'quiz')
+                );
         }
 
         protected function standard_attempt_fields(MoodleQuickForm $mform)
