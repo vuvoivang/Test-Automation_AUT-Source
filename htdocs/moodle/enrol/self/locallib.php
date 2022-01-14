@@ -108,7 +108,7 @@ class enrol_self_enrol_form extends moodleform {
         }
 
         $this->add_action_buttons(false, get_string('enrolme', 'enrol_self'));
-
+       
         $mform->addElement('hidden', 'id');
         $mform->setType('id', PARAM_INT);
         $mform->setDefault('id', $instance->courseid);
