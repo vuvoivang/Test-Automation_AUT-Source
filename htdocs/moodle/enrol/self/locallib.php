@@ -79,7 +79,6 @@ class enrol_self_enrol_form extends moodleform {
 
         if ($instance->password) {
             // Change the id of self enrolment key input as there can be multiple self enrolment methods.
-            $mform->addElement('text', null, "Your name");
             $mform->addElement('password', 'enrolpassword', get_string('password', 'enrol_self'),
                     array('id' => 'enrolpassword_'.$instance->id));
             $context = context_course::instance($this->instance->courseid);
@@ -108,8 +107,8 @@ class enrol_self_enrol_form extends moodleform {
             $mform->addElement('static', 'nokey', '', get_string('nopassword', 'enrol_self'));
         }
 
-        //$this->add_action_buttons(false, get_string('enrolme', 'enrol_self'));
-        $mform->addElement('button', null, 'Send');
+        $this->add_action_buttons(false, get_string('enrolme', 'enrol_self'));
+       
         $mform->addElement('hidden', 'id');
         $mform->setType('id', PARAM_INT);
         $mform->setDefault('id', $instance->courseid);

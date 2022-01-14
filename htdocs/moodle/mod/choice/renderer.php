@@ -74,8 +74,7 @@ class mod_choice_renderer extends plugin_renderer_base {
                 $labeltext .= get_string("limita", "choice", $option->maxanswers);
             }
 
-            //$html .= html_writer::empty_tag('input', (array)$option->attributes + $disabled);
-            $html .= html_writer::start_span('Hello world') . ' Choose me please ' . html_writer::end_span();
+            $html .= html_writer::empty_tag('input', (array)$option->attributes + $disabled);
             $html .= html_writer::tag('label', $labeltext, array('for'=>$option->attributes->id));
             $html .= html_writer::end_tag('li');
         }
@@ -92,7 +91,9 @@ class mod_choice_renderer extends plugin_renderer_base {
                     $html .= html_writer::tag('label', get_string('choicefull', 'choice'));
                 } else {
                     $html .= html_writer::empty_tag('input', array(
-                        'type' => 'password',
+                        'type' => 'submit',
+                        'value' => get_string('savemychoice', 'choice'),
+                        'class' => 'btn btn-primary'
                     ));
                 }
 
