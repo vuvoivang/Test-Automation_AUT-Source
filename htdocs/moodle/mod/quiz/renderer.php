@@ -549,11 +549,20 @@ class mod_quiz_renderer extends plugin_renderer_base {
         }
         if ($lastpage) {
             $nextlabel = get_string('endtest', 'quiz');
+            $output .= html_writer::empty_tag('input', array(
+                'type' => 'submit', 'name' => 'next',
+                'value' => $nextlabel, 'class' => 'mod_quiz-next-nav btn btn-primary', 'id' => 'mod_quiz-next-nav'
+            ));
         } else {
             $nextlabel = get_string('navigatenext', 'quiz');
+            $output .= html_writer::empty_tag('p', array(
+                'class' => 'btn btn-secondary', 'id' => 'mod_quiz-next-nav'
+            ));
+            $output .= html_writer::empty_tag('input', array(
+                'value' => $nextlabel, 'class' => 'mod_quiz-next-nav btn btn-primary',
+            ));
         }
-        $output .= html_writer::empty_tag('input', array('type' => 'submit', 'name' => 'next',
-                'value' => $nextlabel, 'class' => 'mod_quiz-next-nav btn btn-primary', 'id' => 'mod_quiz-next-nav'));
+        
         $output .= html_writer::end_tag('div');
         $this->page->requires->js_call_amd('core_form/submit', 'init', ['mod_quiz-next-nav']);
 
