@@ -649,13 +649,6 @@ class edit_renderer extends \plugin_renderer_base {
                 'cmid' => $structure->get_cmid(), 'category' => $questioncategoryid,
                 'addonpage' => $page, 'appendqnumstring' => 'addquestion');
 
-        $actions['before add a question'] = new \action_menu_link_secondary(
-            new \moodle_url('/question/addquestion.php', $params),
-            new \pix_icon('t/add', $str->addaquestion, 'moodle', array('class' => 'iconsmall', 'title' => '')),
-            'before add a question',
-            array('class' => 'cm-edit-action addquestion')
-        );
-
         $actions['addaquestion'] = new \action_menu_link_secondary(
             new \moodle_url('/question/addquestion.php', $params),
             new \pix_icon('t/add', $str->addaquestion, 'moodle', array('class' => 'iconsmall', 'title' => '')),
